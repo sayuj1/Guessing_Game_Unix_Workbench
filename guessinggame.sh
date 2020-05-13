@@ -10,9 +10,9 @@ function guessinggame {
 		if ! [[ $answer =~ ^[0-9]+$ ]]
 		then
 			echo "Please enter a valid number!"
-		elif [[ $answer -ne $num_of_files ]]
+		elif [ $answer -ne $num_of_files ]
 		then
-			if [[ $answer -gt $num_of_files ]]
+			if [ $answer -gt $num_of_files ]
 			then
 				echo "Your guess is more than the actual number of files"
 			else
