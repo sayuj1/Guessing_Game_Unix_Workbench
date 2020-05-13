@@ -2,7 +2,7 @@
 # File: guessinggame.sh
 
 function guessinggame {
-	num_of_files=$(ls -a | wc -l)
+	num_of_files=$(ls -A | wc -l)
 	while true;
 	do 
 		echo "Take a guess and enter number of files you think in the current directory"
